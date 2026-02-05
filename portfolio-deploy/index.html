@@ -1,16 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <link rel="icon" type="image/png" href="/portfolio/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/portfolio/assets/index-C9jOV9Rl.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-CktwKdnd.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimesh Raj | Software Developer</title>
+    <link rel="icon" type="image/png" href="/portfolio/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor Trail -->
+    <div class="cursor-trail"></div>
+    
+    <!-- Background Gradient Orbs -->
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text"><NR /></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link nav-btn">Let's Talk</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for work
+            </div>
+            <h1 class="hero-title">
+                Hey, I'm <span class="gradient-text">Nimesh Raj</span>
+            </h1>
+            <div class="hero-typing">
+                <span class="typing-text">Software Developer</span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Building scalable backend solutions with Python & Django. 
+                Passionate about creating efficient systems and elegant code.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Let's Talk</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    View Work
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Companies</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Coffee Cups</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="code-title">developer.py</span>
+                </div>
+                <pre class="code-content"><code><span class="keyword">class</span> <span class="class-name">Developer</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.name = <span class="string">"Nimesh Raj"</span>
+        self.role = <span class="string">"Software Developer"</span>
+        self.skills = [
+            <span class="string">"Python"</span>,
+            <span class="string">"Django"</span>,
+            <span class="string">"PostgreSQL"</span>,
+            <span class="string">"FastAPI"</span>
+        ]
+        self.energy = <span class="number">100</span> <span class="comment"># Always maxed out</span>
+
+    <span class="keyword">def</span> <span class="function">build_cool_stuff</span>(self):
+        <span class="keyword">return</span> <span class="string">"Amazing APIs"</span></code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">01. About Me</span>
+                <h2 class="section-title">Building Digital <span class="gradient-text">Experiences</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="frame-decoration"></div>
+                        <img src="assets/WhatsApp_Image_2025-10-26_at_18.07.11_1770288002798-DoBMVdmb.jpeg" alt="Nimesh Raj">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm a <strong>Software Developer</strong> based in Delhi, India, with a passion for building 
+                        robust backend systems and efficient APIs. Currently working at <span class="highlight">SabPaisa</span>, 
+                        I specialize in developing scalable solutions using Python, Django, and modern technologies.
+                    </p>
+                    <p class="about-text">
+                        With over 3 years of experience across companies like <span class="highlight">MyGate</span> and 
+                        <span class="highlight">CGI</span>, I've honed my skills in designing RESTful APIs, optimizing 
+                        database performance, and leading system migrations.
+                    </p>
+                    <div class="about-facts">
+                        <div class="fact">
+                            <span class="fact-icon">🎓</span>
+                            <span>B.Tech from NIT Agartala</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">💼</span>
+                            <span>3+ Years Experience</span>
+                        </div>
+                        <div class="fact">
+                            <span class="fact-icon">🚀</span>
+                            <span>Always Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">02. Journey</span>
+                <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-year="2024 - Present">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Software Developer</h3>
+                            <span class="timeline-company">SabPaisa</span>
+                        </div>
+                        <span class="timeline-location">Delhi</span>
+                        <ul class="timeline-tasks">
+                            <li>Developed and integrated KYC validation APIs for client onboarding</li>
+                            <li>Built payment link solution enabling merchants to generate links for bulk transactions</li>
+                            <li>Optimized backend services for transaction processing</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Celery</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2023 - 2024">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Backend Developer</h3>
+                            <span class="timeline-company">MyGate</span>
+                        </div>
+                        <span class="timeline-location">Bangalore</span>
+                        <ul class="timeline-tasks">
+                            <li>Developed backend solutions for MyGate ERP, a security & community management system</li>
+                            <li>Led migration of legacy systems ensuring zero downtime</li>
+                            <li>Integrated Celery and Redis for efficient task processing</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2021 - 2023">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Software Engineer</h3>
+                            <span class="timeline-company">CGI Information Systems</span>
+                        </div>
+                        <span class="timeline-location">Hyderabad</span>
+                        <ul class="timeline-tasks">
+                            <li>Built backend infrastructure for PACE (Portfolio Assessment Cafe)</li>
+                            <li>Developed modular Django ORM models and API endpoints</li>
+                            <li>Collaborated with stakeholders for efficient database structures</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">03. Arsenal</span>
+                <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-level="95">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">C</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Frameworks</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <span class="card-icon">🐍</span>
+                            <span class="card-name">Django</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="card-icon">⚡</span>
+                            <span class="card-name">FastAPI</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="card-icon">🔄</span>
+                            <span class="card-name">Celery</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="card-icon">⚡</span>
+                            <span class="card-name">Redis</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="card-icon">🗄️</span>
+                            <span class="card-name">DRF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Databases</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <span class="card-icon">🐘</span>
+                            <span class="card-name">PostgreSQL</span>
+                        </div>
+                        <div class="skill-card">
+                            <span class="card-icon">🐬</span>
+                            <span class="card-name">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Tools</h3>
+                    <div class="skill-tags">
+                        <span class="tool-tag">Git</span>
+                        <span class="tool-tag">REST APIs</span>
+                        <span class="tool-tag">ORM</span>
+                        <span class="tool-tag">Docker</span>
+                        <span class="tool-tag">Linux</span>
+                        <span class="tool-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">04. Featured</span>
+                <h2 class="section-title">Cool <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <span class="project-icon">💳</span>
+                        <h3 class="project-title">Payment Link Solution</h3>
+                    </div>
+                    <p class="project-description">
+                        A comprehensive payment link solution allowing merchants to generate, manage, and track 
+                        payment links in bulk with secure validation APIs.
+                    </p>
+                    <ul class="project-features">
+                        <li>Bulk link generation</li>
+                        <li>Fraud prevention</li>
+                        <li>Real-time tracking</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>Redis</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <span class="project-icon">🏢</span>
+                        <h3 class="project-title">MyGate ERP</h3>
+                    </div>
+                    <p class="project-description">
+                        Advanced security and community management system with scalable RESTful APIs 
+                        for inter-service communication.
+                    </p>
+                    <ul class="project-features">
+                        <li>Zero-downtime migration</li>
+                        <li>Optimized queries</li>
+                        <li>API efficiency</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-glow"></div>
+                    <div class="project-header">
+                        <span class="project-icon">📊</span>
+                        <h3 class="project-title">PACE Platform</h3>
+                    </div>
+                    <p class="project-description">
+                        Portfolio Assessment Cafe - Backend infrastructure with modular, reusable 
+                        Django ORM models for efficient portfolio management.
+                    </p>
+                    <ul class="project-features">
+                        <li>Modular architecture</li>
+                        <li>API endpoints</li>
+                        <li>Database optimization</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-content">
+                    <span class="section-label">05. Let's Connect</span>
+                    <h2 class="section-title">Ready to <span class="gradient-text">Collaborate?</span></h2>
+                    <p class="contact-text">
+                        I'm always open to discussing new projects, creative ideas, 
+                        or opportunities to be part of your vision.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:nimeshraj2207@gmail.com" class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>nimeshraj2207@gmail.com</span>
+                        </a>
+                        <a href="tel:+917640965215" class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+91 7640965215</span>
+                        </a>
+                        <a href="https://linkedin.com/in/nimesh-raj" target="_blank" class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <span>linkedin.com/in/nimesh-raj</span>
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/nimesh-raj" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2024 Nimesh Raj. Built with 💻 and ☕</p>
+                <p class="footer-subtext">Designed with love for the modern web</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
 </html>
+
